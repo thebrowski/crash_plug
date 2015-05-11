@@ -3,7 +3,7 @@ defmodule CrashPlug.Mixfile do
 
   def project do
     [app: :crash_plug,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.0",
      deps: deps,
      package: [
