@@ -37,7 +37,7 @@ defmodule CrashPlug.Mixfile do
     ]
   end
 
-  defp  do
+  defp description do
     """
     Elixir plug that forces an internal server error if a certain file is present.
     Useful for testing cdn performance
