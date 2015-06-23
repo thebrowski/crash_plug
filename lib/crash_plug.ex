@@ -8,8 +8,8 @@ defmodule CrashPlug do
   def call(conn, options) do
     present? = File.exists?("crashit.txt")
     case present? do
-      true -> halt send_resp conn, 500, ""
+      true -> raise "Crash and burn"
       false -> conn
-    end 
+    end
   end
 end
