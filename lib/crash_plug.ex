@@ -5,7 +5,7 @@ defmodule CrashPlug do
     options
   end
 
-  def call(conn, options) do
+  def call(conn, _options) do
     present? = File.exists?("crashit.txt")
     case present? do
       true -> raise "Crash and burn"
