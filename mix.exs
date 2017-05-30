@@ -5,12 +5,12 @@ defmodule CrashPlug.Mixfile do
     [app: :crash_plug,
      version: "0.0.2",
      elixir: "~> 1.0",
-     deps: deps,
+     deps: deps(),
      package: [
       contributors: ["Eddie Dombrowski"],
       licenses: ["MIT"]
      ],
-     description: description
+     description: description()
    ]
   end
 
@@ -33,7 +33,7 @@ defmodule CrashPlug.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0.0"},
-      {:plug, "> 0.8.0"}
+      {:plug, "~> 1.3.5"}
     ]
   end
 
@@ -43,5 +43,5 @@ defmodule CrashPlug.Mixfile do
     Useful for testing cdn performance
     """
   end
-  
+
 end
