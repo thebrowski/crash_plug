@@ -33,7 +33,7 @@ defmodule CrashPlug.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0"},
-      {:plug, "~> 1.3.5"}
+      {:plug, "~> 1.3"}
     ]
   end
 
